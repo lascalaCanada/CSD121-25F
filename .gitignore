@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+### CLASS ACTIVITIES ###
+/src/main/java/classActivities.java

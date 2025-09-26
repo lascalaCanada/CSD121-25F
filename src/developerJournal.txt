@@ -109,5 +109,41 @@ Lab 1 - Important Information
 #############################################################################
 
 
+LECTURE 2 - USING OBJECTS
+Presentation: https://saultcollege-my.sharepoint.com/:p:/g/personal/24057211_saultcollege_ca/EWmpGAGeXbRJse7H_noSP6UB6thpIOBmvFyFkk5Skamg7w?e=tIzEZm
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+1. Java object-oriented programming
+.. 1.1. A Class In Java is a blueprint defined in a package that encapsulates data and behavior through fields and methods. ***
+.. 1.2. Method is a named block of code within a class that performs a specific task and can "optionally" & "eventually" return a value. ***
+.. 1.3. An instance is a concrete object created from a class definition, holding its own copy of instance variables and accessible methods. ***
+.. 1.4. Class method is declared with "static" word, it belongs to the class itself and can be called without creating an instance.
+.. 1.5. Class variable, also marked with static word as well, is shared across all instances of a class and belongs to the class rather than any object.
+.. 1.6. An instance method operates on a specific object and can access that object's instance variables and other methods inside.
+.. 1.7. An instance variable is a field defined in a class whose value is unique to each object created from that class.
+.. 1.8. A constructor is a special method invoked when an object is instantiated. *** I need to study more this subject
+.. 1.9. Package is a namespace that organizes related classes and interfaces, helping modularize and manage large codebases.
+
+
+//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//
+
+Lab 2 - Using Objects
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+1. PLAN
+..  1.1. Follow the "Lab 2 - Using Objects.docx" instructions, make all possible comments, and finalize the lab#2.
+
+2. ISSUES & COMMENTS
+..  2.1. I had some misunderstandings about some java concepts. I used chatgpt for students to help me so.
+
+3. A.I.
+.. 3.1. chatgpt learning: https://chatgpt.com/share/68d60078-b130-800d-b6e7-00a8e10d600d
+
+
+#############################################################################
+#############################################################################
+
 
 
