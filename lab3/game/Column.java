@@ -1,4 +1,4 @@
-package lab3.game;
+package lab3.game; // Package that the java file is part of.
 
 /** This enum represents a row on the TicTaeToe board.
  *  "LEFT, MIDDLE, and RIGHT" are the available options"

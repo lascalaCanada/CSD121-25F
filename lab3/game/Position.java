@@ -1,4 +1,4 @@
-package lab3.game;
+package lab3.game; // Package that the java file is part of.
 
 
 /** This record represents the position on the TicTaeToe board.

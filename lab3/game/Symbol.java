@@ -1,4 +1,4 @@
-package lab3.game;
+package lab3.game;  // Package that the java file is part of.
 
 /**
  * This enum represents the allowed symbols in the Tic-Tac-Toe game.
@@ -12,6 +12,7 @@ public enum Symbol {
 
     /*
      * Symbols X and O
+     * This values are immutable
      * */
     X('X'),
     O('O');

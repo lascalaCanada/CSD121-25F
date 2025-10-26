@@ -1,4 +1,4 @@
-package lab3;
+package lab3; // Package that the java file is part of.
 import lab3.game.*;
 import lab3.ui.TicTacToeConsole;
 
