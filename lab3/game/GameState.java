@@ -1,4 +1,4 @@
-package lab3.game;
+package lab3.game; // Package that the java file is part of.
 
 /**
  * Represents the current state of a Tic-Tac-Toe game.

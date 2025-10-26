@@ -1,4 +1,4 @@
-package lab3.game;
+package lab3.game; // Package that the java file is part of.
 import java.util.Arrays;
 import static lab3.game.Row.verticalWord;
 
