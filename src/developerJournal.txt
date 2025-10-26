@@ -1,0 +1,149 @@
+#############################################################################
+#############################################################################
+
+LECTURE 1 - INTRODUCTION to JAVA
+Presentation: https://saultcollege-my.sharepoint.com/:p:/g/personal/24057211_saultcollege_ca/EZZ9BNwQwiJLkR_3dfmzS2ABALrHA4_gscbHNDgWDpzjtQ?e=m6Q4Xq
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+1. Java is a Hybrid language (slide
+.. 1.1. Compiler program converts code into bytecode
+.. 1.2. Bytecode is executed by a virtual machine
+.. 1.3. Can be executed on any platform supported by the virtual machine
+.. 1.4. Hacker News: https://news.ycombinator.com/item?id=35276858
+
+2. Java needs a JDK (Java Development Kit)
+.. 2.1. JVM = java
+.. 2.2. Compiler = javac
+.. 2.3. REPL shell = jshell
+.. 2.4. Vendor that produce JDKs
+.... 2.4.1. Amazon = Corretto (https://aws.amazon.com/corretto/)
+.... 2.4.2. Microsoft = OpenJDK (https://www.microsoft.com/openjdk)
+.... 2.4.3. Oracle = Oracle JDK (https://www.oracle.com/java/technologies/downloads/) e OpenJDK (https://openjdk.java.net/)
+
+3. Java Variables
+.. 3.1. Primitive types (boolean, bytes, short, integer, long, float, double, char)
+..
+
+4. Variables comparisson
+.. 4.1. When using variable1.equals(variable2);, the value between then are compared (equals)
+.. 4.2. When using variable1 == variable2;, the memory location is compared ( == )
+
+5. Switch statement (same of CASE in other languages)
+.. 5.1. Syntax to switch: (https://rmartin-sc.github.io/java-basics/)
+    switch(condition) {
+        case 0:
+            console.log("Poor");
+            break;  // IMPORTANT: Don't forget the break after each case!!
+        case 1:
+            console.log("Good");
+            break;
+        case 2:
+            console.log("Excellent");
+            break;
+        default:
+            console.log("Unknown condition!");
+            break;
+    }
+.. 5.2. Syntax to String + switch: (https://rmartin-sc.github.io/java-basics/)
+    String condStr = switch (condition) {
+        case 0 -> "Poor";
+        case 1 -> "Good";
+        case 2 -> "Excellent";
+        default -> "Unknown condition!";
+    }
+
+6. List & ArrayList & Map
+.. 6.1. Lists:
+.... 6.1.1. Immutable
+
+.. 6.2. ArrayList:
+.... 6.2.1. Mutable
+
+.. 6.3. Map:
+.... 6.3.1. Similar to dictionary in Python
+.... 6.3.2. Does not have an order
+.... 6.3.3. Syntax:
+    dictionary.put(key, "value")
+    rects["one"]. >> The code in the shared screen was erased :(
+
+
+//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//
+
+Lab 1 - Important Information
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+1. PLAN
+..  1.1. Follow the presentation and try to achieve all requests in Lab 1
+..  1.2. The most part of the program was done using Java Basics (https://rmartin-sc.github.io/java-basics/)
+..  1.3. Create a while loop to keep end-user typing the next activity.
+..  1.4. If customer type "quit" or "exit", the program ends.
+..  1.5. Validate if the typed activity is empty, if yes, the program ends.
+..  1.6. After receiving the activity, validate if the activity is completed. Using try-cach, validate if end-user typed "yes" or "no" to give the correct status to the current activity.
+..  1.7. The quantity of completed tasks is done by separated function (countCompletedTasks).
+..  1.8. At final of the program, the data must be saved in an external file called "tasks.txt" (fixed name).
+..  1.9. DONE (finally)
+
+2. ISSUES & COMMENTS
+..  2.1. During development, my main doubt was which library I need to import (I asked chatgpt for students to perform it)
+..  2.2. If IO.readln() cannot read the user’s input, like when the console is unavailable, the program crashes. Use a try-catch block to handle this error.
+..  2.3. Trying to use the tasks or completed lists before initializing them, the program crashes. Ensure they are created with new ArrayList<>() before use.
+..  2.4. Getting access an index like tasks.get(10) when the tasks list has fewer items, the program crashes. Check the list size with tasks.size() before accessing.
+..  2.5. If the user enters "maybe" instead of "yes" or "no" for task completion, the program throws an error. This is already handled with a try-catch block in your code.
+..  2.6. If the program lacks permission to write to tasks.txt, it fails to save tasks. Ensure the file and folder have write permissions or handle with a try-catch block.
+..  2.7. If the user submits an empty task by pressing Enter, IO.readln() returns an empty string, causing issues. This is already checked with task.trim().isEmpty() in your code.
+..  2.8. Adding a feature to read numbers with IO.readln() and the user enters text, parsing with Integer.parseInt() causes an error. Use a try-catch block to validate numeric input.
+..  2.9. If you add or remove tasks from the tasks list while looping through it, the program crashes. Avoid modifying the list during loops or use a copy of the list.
+.. 2.10. If tasks.txt is open in another program, the FileWriter fails to save tasks. This is already handled with a try-catch block in your saveTasksToFile method.
+.. 2.11. The java.io.IO was not recognized in the IntelliJ, I tried to adjust it: JDK 25, Windows system variables, IntelliJ settings, once it did not work, I decide to use the function scanner :(
+.. 2.12. After the homework was done, the template repo was not recognizing my fork. I decided to delete my previous repo, create a new fork, clone locally, make some changes/inserts,run he program one more time, and redo all git activities. (I hope it solve my problem)
+
+3. A.I.
+.. 3.1. chatgpt learning:
+.. 3.2. grok: I used trying to fix issues about java.io.IO. In this case, I don't have the link, it was not part of the lab.
+.. 3.3. grok: I used grok to check about the procedure about fix this issue.
+
+
+#############################################################################
+#############################################################################
+
+
+LECTURE 2 - USING OBJECTS
+Presentation: https://saultcollege-my.sharepoint.com/:p:/g/personal/24057211_saultcollege_ca/EWmpGAGeXbRJse7H_noSP6UB6thpIOBmvFyFkk5Skamg7w?e=tIzEZm
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+1. Java object-oriented programming
+.. 1.1. A Class In Java is a blueprint defined in a package that encapsulates data and behavior through fields and methods. ***
+.. 1.2. Method is a named block of code within a class that performs a specific task and can "optionally" & "eventually" return a value. ***
+.. 1.3. An instance is a concrete object created from a class definition, holding its own copy of instance variables and accessible methods. ***
+.. 1.4. Class method is declared with "static" word, it belongs to the class itself and can be called without creating an instance.
+.. 1.5. Class variable, also marked with static word as well, is shared across all instances of a class and belongs to the class rather than any object.
+.. 1.6. An instance method operates on a specific object and can access that object's instance variables and other methods inside.
+.. 1.7. An instance variable is a field defined in a class whose value is unique to each object created from that class.
+.. 1.8. A constructor is a special method invoked when an object is instantiated. *** I need to study more this subject
+.. 1.9. Package is a namespace that organizes related classes and interfaces, helping modularize and manage large codebases.
+
+
+//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//
+
+Lab 2 - Using Objects
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+1. PLAN
+..  1.1. Follow the "Lab 2 - Using Objects.docx" instructions, make all possible comments, and finalize the lab#2.
+
+2. ISSUES & COMMENTS
+..  2.1. I had some misunderstandings about some java concepts. I used chatgpt for students to help me so.
+
+3. A.I.
+.. 3.1. chatgpt learning: https://chatgpt.com/share/68d60078-b130-800d-b6e7-00a8e10d600d
+
+
+#############################################################################
+#############################################################################
+
+
+
