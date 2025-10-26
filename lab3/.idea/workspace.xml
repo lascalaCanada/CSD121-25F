@@ -4,24 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="23c62aa9-10b1-4857-856e-dd348b26299b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/lab3/lab3/developerJournal.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Column.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Column.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/PlayerName.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/PlayerName.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Row.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Row.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/game/Symbol.java" beforeDir="false" afterPath="$PROJECT_DIR$/game/Symbol.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/lab3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/lab3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/lab3/ai-use-statement.md" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/lab3/ai-use-statement.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/lab3/game/Symbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/lab3/game/Symbol.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab3/lab3/ui/TicTacToeConsole.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab3/lab3/ui/TicTacToeConsole.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ui/TicTacToeConsole.java" beforeDir="false" afterPath="$PROJECT_DIR$/ui/TicTacToeConsole.java" afterDir="false" />
-    </list>
+    <list default="true" id="23c62aa9-10b1-4857-856e-dd348b26299b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
