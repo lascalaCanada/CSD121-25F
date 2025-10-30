@@ -1,0 +1,67 @@
+#############################################################################
+#############################################################################
+
+
+LAB#3 + TIC TAC TOE GAME
+
+-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-
+
+1. PLAN
+..  1.1. Thinking which part of the code must be CORE and SHELL
+..  1.2. Choose a partner to create this application
+..  1.3. Create a new package called lab3, it must be separated of the others labs
+..  1.4. Coding all requirements in a new branch called lab3
+..  1.5. Create a public class to care of the rows, and another to care of the columns
+..  1.6. Create a public class to manage the visual board to the players
+..  1.7. Include in the board an Axis Title in the vertical and horizontal positions
+..  1.8. Create a class to represent each player with name and symbol (encapsulating process)
+..  1.9. Create a class to handle user interaction via the console
+.. 1.10. Create the main class to coordinate the game flow
+.. 1.11. Use enums to simplify parsing and indexing of user input (classes about enums and records were really so useful in this part)
+.. 1.12. The TicTacToe game must support flexible input formats for moves, like "2 2", "mr", "top right")
+.. 1.13. If some player typed his movement, the game needs to validate the player direction to prevent reused positions
+.. 1.14. Every new play, the TicTacToe must validate if there is a winner
+.. 1.15. If a winner is found, ensure the game stops immediately
+.. 1.16. Standard and clearly comment each point of the code to facilitate future understanding + JavaDOC
+.. 1.17. Try to use IO.<function> instead of scanner or system.io >> 25 JFK Standard
+.. 1.18. The players must have the option to finish the game typing "x" or "X" input
+
+
+2. ISSUES & COMMENTS
+..  2.1. I spend some time thinking about how to prevent reused positions, after the code is running with no errors, it was a challenge for me.
+..  2.2. I had to validate the winner after each move, and it took me a while to get the logic right.
+..  2.3. I forgot to stop the game after a win, and the loop kept running, but I fixed it later.
+..  2.4. I had a problem with the board formatting, it was printing in the wrong place, so I adjusted the position and the method it was performing.
+..  2.5. I used enums to help with parsing the input, and it made the code easier to read.
+..  2.6. For the symbol, the variable that supports X or 0, was declared as Char instead of String.
+..  2.7. I used a ternary operator to switch players (if-else), and it made the code shorter and easier to understand.
+..  2.8. I organized the game loop step by step, and it helped me understand the flow of the game. At beginning of coding, I created a mental map, which now, I'm sure, it is better to use some tool, like Visual-Paradigm or Miro.
+..  2.9. I returned the wrong value in Board.place(), mixing move validation with winner check, and it caused problems. This was one of the most complex sintax and logic situation I faced to solve.
+.. 2.10. I used final for fields that should not change, like name and symbol in PlayerName. A differnt strategy to immutable data during the current game.
+.. 2.11. I got confused using return !theWinner(player), and it was not working as I expected. In this case, I make a question to Google to understand how to check an if in a negative form.
+.. 2.12. I had to validate the winner after each move, and it took me a while to get the logic in the right way.
+.. 2.13. I spend some time thinking about how to prevent reused positions, after the code runned with no errors, it was really a challenge.
+.. 2.14. I forgot to stop the game after a win, and the loop kept running, but I fixed it later, it is better now.
+.. 2.15. When I decided to print the board through a method called boardFormatter(), I made a mistake: I printed the board inside the formatter method, so I included the board into a full string to be return.
+.. 2.16. I had to handle exceptions when parsing enums, especially when the input was invalid, then, I included the try-catch method. Done.
+.. 2.17. I made sure the player names were not empty and not the same, using validation in promptPlayer. A hands-on proof of spreeding each feature per functions is the best way to keep the code in easier mode to make adjustments.
+.. 2.18. I separated the move validation from the winner check, and it made the code clearer and easy to understand.
+.. 2.19. I tried to use input == "x" to stop the game, but it didn’t work, so I visited the class materials and I remembered the right way is using the equalsIgnoreCase statement.
+.. 2.20. I used trim() and toLowerCase() to clean the input before processing. Due to I decide to avoid players with the same name, this methods helps in the comparisison.
+.. 2.21. I added axis titles to the board to help players understand the positions better. I hesitated for a while, aiming to keep the board as cleanner as possible, but at the end of the day, it is going to help the players to understand the movements.
+.. 2.22. I created a method to check if the board is full, and used it to detect a draw.
+.. 2.23. I allowed the player to type moves in different formats like "2 2" or "mr", and it worked well. Maybe It probably differs of what was requested, but it became the game more playable.
+.. 2.24. I used break to stop the loop when the game ended, and it worked fine. It was coded in the TicTacToeConsole.java as "input.split("\\s+");".
+.. 2.25. I added comments to every method to explain what it does, and it helped me to understand the game flow, its functionalities per java file, and stay organized.
+.. 2.26. I tried to keep all comments in the same format, using block style with asterisks. Create a standard and keep it was a good advise received during the classes.
+.. 2.27. Probably the order below is not correct. I noted my thoughts and difficulties in different moments, and it is really complex to avoid starting sentences without "I +<verb>". Particularly I do not like it.
+.. 2.28. At the end of the day, my question here is to keep clear in my mind which is a class and how to classify it, a method and how to classify it, a function and how to classify it etc. I know that lab#2 was exactly about this subject and I did it, however, this is pretty complex for me until now.
+
+
+3. A.I.
+.. 3.1. chatgpt learning link: https://chatgpt.com/share/68fb971c-f804-800d-9fef-b67c22a2129e
+
+
+#############################################################################
+#############################################################################
+
